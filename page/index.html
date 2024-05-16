@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="Pt-br" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <!-- Favico -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <title>Principais Sistemas - Setic</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="../assets/dist/css/style.css" rel="stylesheet">
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Principais Sistemas</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4>Sobre</h4>
+            <p class="text-body-secondary">Este simples index foi desenvolvido para facilitar a integração dos novos membros da Setic, oferecendo uma forma simples e direta de se familiarizar e operar os sistemas internos da organização.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4>Saiba Mais</h4>
+            <ul class="list-unstyled">
+
+              <li><a href="https://wiki.setic.ro.gov.br/pt-br/home/spaces/code/migration" class="text-white">Portfólio de Sistemas Wiki</a></li>
+              <li><a href="https://wiki.setic.ro.gov.br/home/base_conhecimento/manuais/sistemas" class="text-white">Manuais Sistemas</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="../assets/images/Setic---Governo-RO branco.png" width="50" height="50" class="card-img-top" alt="...">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Principais Sistemas de Acessos Diários</h1>
+          <p class="lead text-body-secondary">Acesse abaixo os principais Sistemas gerenciados pela Superintendência Estadual de Tecnologia da Informação e Comunicação - SETIC/RO</p>
+          <p>
+
+            <a href="https://atendimento.setic.ro.gov.br/plugins/formcreator/front/wizard.php" class="btn btn-secondary my-2">Relatar um Problema</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <!--Cards Sistemas-->
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://sei.sistemas.ro.gov.br/sip/login.php?sigla_orgao_sistema=ABC&sigla_sistema=SEI" target="_blank">
+                <img src="../assets/images/sei.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sei!</h5>
+                <p class="card-text">Sistema Sei Usar do Governo de Rondônia</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://calendar.google.com/calendar/u/1/r" target="_blank">
+                <img src="../assets/images/agenda_setic.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Agenda Setic</h5>
+                <p class="card-text">Agenda Google da Setic RO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://sauron.sistemas.ro.gov.br/Autenticacao/Entrar?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3D7f9be080-6574-4a27-90cb-45ad590eccd0%26redirect_uri%3Dhttps%253A%252F%252Fmeuacesso.sistemas.ro.gov.br%252Fsignin-oidc%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520offline_access%2520sauron_api.user%2520sei_api.user%26code_challenge%3DrKOGZCEvYPKsD30ovOZzhx5UdMtwMLodEsPJTMWL6dU%26code_challenge_method%3DS256%26response_mode%3Dform_post%26nonce%3D638451702456997177.NWYwZDllYzEtNmI3OS00MTNiLTk1YTktZjllNGQ5NDA2YTZmZDA4YTAwZjItYzllYi00ODEwLTkzZTYtZWMwMzYyNGMzNjVj%26state%3DCfDJ8MRJtWTkHrpFi4u300muoCvm9cXAdl_2P7qYcJmR6aXBz3Vjtb2ncW-ziVhwnfIL8C9Uc6HQw8zjCvNgrAvmZTQyFS-dn_riawzkp4olOawhpt3TqccdNUz2G7gDBiyhorgd8hycUgP8RcMIKD5PNhEpIZul4wlQ0HV7Ixcep564n8mSAt7RuIsEAIVUrlS-vRqqpe0EB3SBRpERV2ilbcnwUYXfL37xlsNXtdt6L87bzR5kwMjYrwDnbwr6XHI4xK0bKKLxXIgFhD8DdibsqjuG-jScHZirfZg6tULn7ABYm8Mh0qthuIuu-Px-LXfomuRszZcp2IpcM6EG8b2HMQuHPAxJAMob_XCA4M2BvLWi0tpyTHJUIKyihqA8A4L906iRVjVoXY-3XZKJ2hk5doo%26x-client-SKU%3DID_NETSTANDARD2_0%26x-client-ver%3D5.5.0.0" target="_blank">
+                <img src="../assets/images/sauron.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sauron</h5>
+                <p class="card-text">Sistema de Autenticação Governo RO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://alpha.treinamento.ro.gov.br/" target="_blank">
+                <img src="../assets/images/alpha_treinamento.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sistema Alpha - Treinamento</h5>
+                <p class="card-text">Sistema responsável pelo gerenciamento de serviços e solicitações dos principais portais - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://e-estado.treinamento.ro.gov.br" target="_blank">
+                <img src="../assets/images/e-estado.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sistema E-Estado</h5>
+                <p class="card-text">Sistema de Treinamento E-Estado - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://portaldocidadao.treinamento.ro.gov.br/" target="_blank">
+                <img src="../assets/images/pc_treinamento.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Portal do Cidadão - Treinamento</h5>
+                <p class="card-text">Sistema responsável pelos testes realizados no portal do cidadão - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://portaldoservidor-qa.sistemas.ro.gov.br/Servico/Index" target="_blank">
+                <img src="../assets/images/ps_treinamento.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Portal do Servidor - Treinamento</h5>
+                <p class="card-text">Sistema responsável pelos testes realizados no portal do servidor - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://setic.atlassian.net/jira/software/projects/GTD/boards/230">
+                <img src="../assets/images/jira.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Quadro Jira - GTD</h5>
+                <p class="card-text">Acesso ao quadro de Tarefas - GTD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="http://meuacesso.sistemas.ro.gov.br" target="_blank">
+                <img src="../assets/images/meu_acesso.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Meu Acesso</h5>
+                <p class="card-text">Sistema de Solicitações de Acesso - Setic RO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://atendimento.setic.ro.gov.br/plugins/formcreator/front/wizard.php" target="_blank">
+                <img src="../assets/images/glpi_suporte.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">GLPI Suporte</h5>
+                <p class="card-text">Sistema de Abertura de Chamados</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://drive.sistemas.ro.gov.br/apps/dashboard/#/" target="_blank">
+                <img src="../assets/images/cloud_setic.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Cloud Setic</h5>
+                <p class="card-text">Sistema Drive de Arquivos em Núvem - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://webmail.setic.ro.gov.br/#1" target="_blank">
+                <img src="../assets/images/zimbra_email.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Email Zimbra Setic</h5>
+                <p class="card-text">Ferramenta de Gerenciamento de E-Mails - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://wiki.setic.ro.gov.br" target="_blank">
+                <img src="../assets/images/wiki-setic.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Wiki Setic</h5>
+                <p class="card-text">Sistema responsável pelas documentações e relatórios - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://analytics.sistemas.ro.gov.br/index.php?module=CoreHome&action=index&idSite=1&period=day&date=yesterday#?period=day&date=yesterday&category=Dashboard_Dashboard&subcategory=1" target="_blank">
+                <img src="../assets/images/matamo_estatisticas.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sistema de Estatísticas GOV RO - Matomo</h5>
+                <p class="card-text">Sistema responsável pelos dados estatísticos de sistemas e acessos - Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <a href="https://relatorios.sistemas.ro.gov.br/adminpbi/powerbi/COGE/Gerência%20de%20Transformação%20Digital/Portal%20do%20cidadão%20Agendamentos" target="_blank">
+                <img src="../assets/images/power_bi.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Sistema de Estatísticas GOV RO - Power Bi</h5>
+                <p class="card-text">Sistema responsável pelo demonstrativo de Paineis dos Portais Dashboard Setic</p>
+              </div>
+            </div>
+          </div>
+
+          <!--//-->
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-body-secondary py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+
+        <a href="">
+          <button class="btn btn-primary">Voltar ao topo 🔼</button>
+        </a>
+        
+      </p>
+      <p id="dataAtual"></p> 
+      <p class="mb-1">Acesso &copy; aos principais sistemas - SETIC/RO by:  Anderson Seixas</p>
+      <span>Sugestões e novas ideias, por favor entre em contato: <span class="badge text-bg-info">andersonseixas@setic.ro.gov.br</span><span> | V 1.0.0</span>😉</span>
+
+    </div>
+  </footer>
+  <script>
+
+    // Este é o conteúdo do arquivo script.js
+
+    // Função para obter a data atual e atualizar o elemento HTML com o id "dataAtual"
+    function mostrarDataAtual() {
+      const dataAtual = new Date();
+
+      const ano = dataAtual.getFullYear();
+
+      const dataFormatada = `${ano}`;
+
+      document.getElementById("dataAtual").textContent = `${dataFormatada}`;
+    }
+
+    // Chamando a função para exibir a data atual quando a página for carregada
+    mostrarDataAtual();
+
+  </script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
